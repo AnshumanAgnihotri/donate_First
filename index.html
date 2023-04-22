@@ -7,10 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <title>Donate Today</title>
+    <title>Donate First</title>
 </head>
 
 <body>
+
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"2c65e1c9ef97f73e02963268f3cf624e0","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+
+
+
     
     <header class="container">
 
@@ -18,6 +33,10 @@
         <h1>More In Need</h1>
         <p>In these trying times, extend your hand and spread love and support for the less fortunate.</p>
         <a href="" class="red-btn">Donate Now</a>
+        <!-- <a href="http://www.google.com" class="Donate Now">Click me!</a> -->
+        <button onclick="window.location.href='https://paytm.me/4zd1-LI'" class="Donate Now">Click me!</button>
+
+
 
     </header>
 
@@ -30,17 +49,19 @@
 
             <div class="donation-amount">
 
-                <h3>100tk</h3>
-                <h3 id="red-amount">200tk</h3>
-                <h3>500tk</h3>
-                <h3>1000tk</h3>
-                <h3>5000tk</h3>
+                <!-- <h3>₹100</h3> -->
+                <h3 id="red-amount">₹1</h3>
+                <!-- <h3>₹1</h3> -->
+                <!-- <h3>₹1000</h3> -->
+                <!-- <h3>₹5000</h3> -->
 
             </div>
 
-            <input type="text" name="amount" id="" placeholder="Other Amount (Taka)">
+            <input type="text" name="amount" id="" placeholder="Other Amount (INR)">
             <a href="" class="red-btn">Donate Now</a>
+            <button onclick="window.location.href='https://paytm.me/4zd1-LI'" class="Donate Now">Click me!</button>
 
+            
         </section>
 
         <section class="donate-plan container">
@@ -74,7 +95,7 @@
             <p>A few glimpses of the activities carried out by our staff and community members.</p>
 
             <div class="gallery">
-                <img src="images/activity1.jpg" alt="">
+                <img src="images/activity6.png" alt="">
                 <img src="images/activity2.jpg" alt="">
                 <img src="images/activity3.jpg" alt="">
             </div>
@@ -97,7 +118,7 @@
 
     <footer class="container">
         <h4>Be Humble</h4>
-        <p>&copy; Asif Rezwan Kabir 2022 | All Rights Reserved</p>
+        <p>&copy; Anshuman Agnihotri 2023 | College Project | All Rights Reserved</p>
     </footer>
 
 </body>
